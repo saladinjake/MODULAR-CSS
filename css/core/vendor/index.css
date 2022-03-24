@@ -8,3 +8,11 @@
 
 -----------------------------------------------------------------------------------
  */
+
+ @import "./modules/core/_animate.css";
+ @import "./modules/core/_datepicker.css";
+ @import "./modules/core/_feather-icon.css";
+ @import "./modules/core/_flag-icons.css";
+ @import "./modules/core/_icon-fonts.css";
+ @import "./modules/core/_themify.css"; 
+ @import "./modules/core/_bootstrap.css";

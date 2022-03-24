@@ -8,3 +8,30 @@
 
 -----------------------------------------------------------------------------------
  */
+
+ @-webkit-keyframes fadeIncustom {
+    0% {
+        opacity: 0;
+        top: 50px;
+    }
+    75% {
+        opacity: 0.6;
+        top: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeIncustom {
+    0% {
+        opacity: 0;
+        top: 50px;
+    }
+    75% {
+        opacity: 0.6;
+        top: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
