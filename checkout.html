@@ -1,0 +1,714 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="enterprise html css structure.">
+    <meta name="keywords" content="enterprise html css structure">
+    <meta name="author" content="pixelstrap">
+    <title>Enterprise Trader</title>
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900&amp;display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./css/mainstyles.css">
+    
+  </head>
+  <body onload="startTime()">
+    <!-- loader starts-->
+    <div class="loader-wrapper">
+  
+     
+        <div class="loader-box">
+          <div class="loader-37"></div>
+        </div>
+    
+      <!-- <div class="loader-index"><span></span></div>
+      <svg>
+        <defs></defs>
+        <filter id="goo">
+          <fegaussianblur in="SourceGraphic" stddeviation="11" result="blur"></fegaussianblur>
+          <fecolormatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo"> </fecolormatrix>
+        </filter>
+      </svg> -->
+    </div>
+    <!-- loader ends-->
+    <!-- tap on top starts-->
+    <div class="tap-top"><i data-feather="chevrons-up"></i></div>
+    <!-- tap on tap ends-->
+    <!-- page-wrapper Start-->
+    <div class="page-wrapper compact-wrapper" id="pageWrapper">
+      <!-- Page Header Start-->
+      <div class="page-header">
+        <div class="header-wrapper row m-0">
+          <form class="form-inline search-full col" action="#" method="get">
+            <div class="form-group w-100">
+              <div class="Typeahead Typeahead--twitterUsers">
+                <div class="u-posRelative">
+                  <input class="demo-input Typeahead-input form-control-plaintext w-100" type="text" placeholder="Search .." name="q" title="" autofocus>
+                  <div class="spinner-border Typeahead-spinner" role="status"><span class="sr-only">Loading...</span></div><i class="close-search" data-feather="x"></i>
+                </div>
+                <div class="Typeahead-menu"></div>
+              </div>
+            </div>
+          </form>
+          <div class="header-logo-wrapper col-auto p-0">
+            <div class="logo-wrapper"><a href="index.html"><img class="img-fluid" src="../assets/images/logo/logo.png" alt=""></a></div>
+            <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="align-center"></i></div>
+          </div>
+          <div class="left-header col horizontal-wrapper ps-0">
+            <ul class="horizontal-menu" >
+              <li class="mega-menu outside"><a class="nav-link" href="#!"><i data-feather="layers"></i><span>Quick Menu</span></a>
+                <div class="mega-menu-container nav-submenu menu-to-be-close header-mega">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col mega-box">
+                        <div class="mobile-title d-none">
+                          <h5>Trade Features</h5><i data-feather="x"></i>
+                        </div>
+                        <div class="link-section icon">
+                          <div>
+                            <h6>Wallet</h6>
+                          </div>
+                          <ul>
+                            <li><a href="">Wallet</a></li>
+                            <li><a href="">Cashout To Bank</a></li>
+                            <li><a href="">Local Transfer</a></li>
+                            <li><a href="">Exchange Currency</a></li>
+                            <li><a href="">Buy Crypto coin</a></li>
+                            <li><a href="">Sell Crypto coin</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col mega-box">
+                        <div class="link-section doted">
+                          <div>
+                            <h6>Trade Market</h6>
+                          </div>
+                          <ul>
+                            <li><a href="">Trade Market</a></li>
+                            <li><a href="">Crypto Market</a></li>
+                            <li><a href="">Forex Market</a></li>
+                            <li><a href="">Stock Market</a></li>
+                         
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col mega-box">
+                        <div class="link-section dashed-links">
+                          <div>
+                            <h6>Usefull Pages</h6>
+                          </div>
+                          <ul>
+                            <li><a href="">ICO</a></li>
+                            <li><a href="">Become a miner</a></li>
+                            <li><a href="forget-password.html">Become a sales merchant</a></li>
+                            <li><a href="reset-password.html">Import wallet</a></li>
+                            <li><a href="maintenance.html">Load money</a></li>
+                            <li><a href="login-sa-validation">Send money</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col mega-box">
+                        <div class="link-section">
+                          <div>
+                            <h6>Information</h6>
+                          </div>
+                          <ul>
+                            <li class="ps-0"><a href="basic-template.html">Cryptocurrency news</a></li>
+                            <li class="ps-0"><a href="email-header.html">Forex trade  news</a></li>
+                            <li class="ps-0"><a href="template-email.html">Learning to trade</a></li>
+                            <li class="ps-0"><a href="template-email-2.html">Winning factor</a></li>
+                            
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col mega-box">
+                        <div class="link-section">
+                          <div>
+                            <h6>Coming Soon</h6>
+                          </div>
+                          <ul class="svg-icon">
+                            <li><a href=""> <i data-feather="file"> </i>More</a></li>
+                            <li><a href=""> <i data-feather="film"> </i>More</a></li>
+                            <li><a href=""><i data-feather="image"> </i>More</a></li>
+                          </ul>
+                          <div>
+                            <h6>Other Soon</h6>
+                          </div>
+                          <ul class="svg-icon">
+                            <li><a class="txt-primary" href=""> <i data-feather="cast"></i>Landing Page</a></li>
+                            <li><a class="txt-secondary" href=""> <i data-feather="airplay"></i>Sample Page</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="level-menu outside"><a class="nav-link" href="#!"><i data-feather="inbox"></i><span>Wallet Account</span></a>
+                <ul class="header-level-menu menu-to-be-close">
+                  <li><a href="" data-original-title="" title=""> <i data-feather="git-pull-request"></i><span>Cold Storage    </span></a></li>
+                  <li><a href="#!" data-original-title="" title=""><i data-feather="users"></i><span>Hot Storage</span></a>
+                    <ul class="header-level-sub-menu">
+                      <li><a href="" data-original-title="" title=""> <i data-feather="user"></i><span>Double Encryted</span></a></li>
+                      <li><a href="" data-original-title="" title=""> <i data-feather="user-minus"></i><span>Wallet  Address</span></a></li>
+                      <li><a href="" data-original-title="" title=""><i data-feather="user-check"></i><span>Load Wallet</span></a></li>
+                    </ul>
+                  </li>
+                  <li><a href="" data-original-title="" title=""><i data-feather="airplay"></i><span>Change Wallet Address</span></a></li>
+                  <!-- <li><a href="" data-original-title="" title=""><i data-feather="heart"></i><span>This</span></a></li>
+                  <li><a href="" data-original-title="" title=""> <i data-feather="zap"></i><span>That                    </span></a></li> -->
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-right col-8 pull-right right-header p-0">
+            <ul class="nav-menus">
+              <li class="language-nav">
+                <div class="translate_wrapper">
+                  <div class="current_lang">
+                    <div class="lang"><i class="flag-icon flag-icon-us"></i><span class="lang-txt">EN                               </span></div>
+                  </div>
+                  <div class="more_lang">
+                    <div class="lang selected" data-value="en"><i class="flag-icon flag-icon-us"></i><span class="lang-txt">English<span> (US)</span></span></div>
+                    <div class="lang" data-value="de"><i class="flag-icon flag-icon-de"></i><span class="lang-txt">Deutsch</span></div>
+                    <div class="lang" data-value="es"><i class="flag-icon flag-icon-es"></i><span class="lang-txt">Español</span></div>
+                    <div class="lang" data-value="fr"><i class="flag-icon flag-icon-fr"></i><span class="lang-txt">Français</span></div>
+                    <div class="lang" data-value="pt"><i class="flag-icon flag-icon-pt"></i><span class="lang-txt">Português<span> (BR)</span></span></div>
+                    <div class="lang" data-value="cn"><i class="flag-icon flag-icon-cn"></i><span class="lang-txt">简体中文</span></div>
+                    <div class="lang" data-value="ae"><i class="flag-icon flag-icon-ae"></i><span class="lang-txt">لعربية <span> (ae)</span></span></div>
+                  </div>
+                </div>
+              </li>
+              <li>                         <span class="header-search"><i data-feather="search"></i></span></li>
+              <li class="onhover-dropdown">
+                <div class="notification-box"><i data-feather="bell"> </i><span class="badge rounded-pill badge-secondary">4 </span></div>
+                <div class="onhover-show-div notification-dropdown">
+                  <h6 class="f-18 mb-0 dropdown-title">Notitications                               </h6>
+                  <ul>
+                    <li class="b-l-primary border-4">
+                      <p>Your minning was successful <span class="font-danger">10 min.</span></p>
+                    </li>
+                    <li class="b-l-success border-4">
+                      <p>Request for cashout  Complete<span class="font-success">1 hr</span></p>
+                    </li>
+                    <li class="b-l-info border-4">
+                      <p>Invoice was generated regarding trade transaction between Alahaji Musa and Ken Gibbs<span class="font-info">3 hr</span></p>
+                    </li>
+                    <li class="b-l-warning border-4">
+                      <p>Wallet balance is $2,000,000,000<span class="font-warning">6 hr</span></p>
+                    </li>
+                    <li><a class="f-w-700" href="#">Check all</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="onhover-dropdown">
+                <div class="notification-box"><i data-feather="star"></i></div>
+                <div class="onhover-show-div bookmark-flip">
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="front">
+                        <h6 class="f-18 mb-0 dropdown-title">Find</h6>
+                        <ul class="bookmark-dropdown">
+                          <li>
+                            <div class="row">
+                              <div class="col-4 text-center">
+                                <div class="bookmark-content">
+                                  <div class="bookmark-icon"><i data-feather="file-text"></i></div><span>Trade History</span>
+                                </div>
+                              </div>
+                              <div class="col-4 text-center">
+                                <div class="bookmark-content">
+                                  <div class="bookmark-icon"><i data-feather="user"></i></div><span>Customer/Buyer</span>
+                                </div>
+                              </div>
+                              <div class="col-4 text-center">
+                                <div class="bookmark-content">
+                                  <div class="bookmark-icon"><i data-feather="server"></i></div><span>Ico's</span>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="text-center"><a class="flip-btn f-w-700" id="flip-btn" href="javascript:void(0)">Add New Quick Link</a></li>
+                        </ul>
+                      </div>
+                      <div class="back">
+                        <ul>
+                          <li>
+                            <div class="bookmark-dropdown flip-back-content">
+                              <input type="text" placeholder="search...">
+                            </div>
+                          </li>
+                          <li><a class="f-w-700 d-block flip-back" id="flip-back" href="javascript:void(0)">Back</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="mode"><i class="fa fa-moon-o"></i></div>
+              </li>
+              <li class="cart-nav onhover-dropdown">
+                <div class="cart-box"><i data-feather="shopping-cart"></i><span class="badge rounded-pill badge-primary">2</span></div>
+                <div class="cart-dropdown onhover-show-div">
+                  <h6 class="f-18 mb-0 dropdown-title">Cart</h6>
+                  <ul>
+                    <li>
+                      <div class="media"><img class="img-fluid b-r-5 me-3 img-60" src="../assets/images/other-images/cart-img.jpg" alt="">
+                        <div class="media-body"><span>Bitcoin purchase</span>
+                          <div class="qty-box">
+                            <div class="input-group"><span class="input-group-prepend">
+                                <button class="btn quantity-left-minus" type="button" data-type="minus" data-field="">-</button></span>
+                              <input class="form-control input-number" type="text" name="quantity" value="1"><span class="input-group-prepend">
+                                <button class="btn quantity-right-plus" type="button" data-type="plus" data-field="">+</button></span>
+                            </div>
+                          </div>
+                          <h6 class="font-primary">$500</h6>
+                        </div>
+                        <div class="close-circle"><a class="bg-danger" href="#"><i data-feather="x"></i></a></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="media"><img class="img-fluid b-r-5 me-3 img-60" src="../assets/images/other-images/cart-img.jpg" alt="">
+                        <div class="media-body"><span>Dodge coin purchase</span>
+                          <div class="qty-box">
+                            <div class="input-group"><span class="input-group-prepend">
+                                <button class="btn quantity-left-minus" type="button" data-type="minus" data-field="">-</button></span>
+                              <input class="form-control input-number" type="text" name="quantity" value="1"><span class="input-group-prepend">
+                                <button class="btn quantity-right-plus" type="button" data-type="plus" data-field="">+</button></span>
+                            </div>
+                          </div>
+                          <h6 class="font-primary">$500.00</h6>
+                        </div>
+                        <div class="close-circle"><a class="bg-danger" href="#"><i data-feather="x"></i></a></div>
+                      </div>
+                    </li>
+                    <li class="total">
+                      <h6 class="mb-0">Order Total : <span class="f-right">$1000.00</span></h6>
+                    </li>
+                    <li class="text-center"><a class="d-block mb-3 view-cart f-w-700" href="cart.html">Go to your cart</a><a class="btn btn-primary view-checkout" href="checkout.html">Checkout</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="onhover-dropdown"><i data-feather="message-square"></i>
+                <div class="chat-dropdown onhover-show-div">
+                  <h6 class="f-18 mb-0 dropdown-title">Messages</h6>
+                  <ul class="py-0">
+                    <li>
+                      <div class="media"><img class="img-fluid b-r-5 me-2" src="../assets/images/user/1.jpg" alt="">
+                        <div class="media-body">
+                          <h6>Mubarak</h6>
+                          <p>Wishes to buy bitcoin from you. Message her if you are available to trade</p>
+                          <p class="f-8 font-primary mb-0">3 hours ago</p>
+                        </div><span class="badge rounded-circle badge-primary">2</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="media"><img class="img-fluid b-r-5 me-2" src="../assets/images/user/2.jpg" alt="">
+                        <div class="media-body">
+                          <h6>Kazeem Aliyu</h6>
+                          <p>has joined your net work to trade</p>
+                          <p class="f-8 font-primary mb-0">1 hr ago</p>
+                        </div><span class="badge rounded-circle badge-primary">2</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="media"><img class="img-fluid b-r-5 me-2" src="../assets/images/user/14.png" alt="">
+                        <div class="media-body">
+                          <h6>Saladin jake</h6>
+                          <p>You missed a call with salading jake. He wants to do business with you...</p>
+                          <p class="f-8 font-primary mb-0">32 mins ago</p>
+                        </div><span class="badge rounded-circle badge-primary">2</span>
+                      </div>
+                    </li>
+                    <li class="text-center"> <a class="f-w-700" href="#">View All     </a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="maximize"><a class="text-dark" href="#!" onclick="javascript:toggleFullScreen()"><i data-feather="maximize"></i></a></li>
+              <li class="profile-nav onhover-dropdown p-0 me-0">
+                <div class="media profile-media"><img class="b-r-10" src="../assets/images/dashboard/profile.jpg" alt="">
+                  <div class="media-body"><span>Saladin Jake</span>
+                    <p class="mb-0 font-roboto">Super Admin <i class="middle fa fa-angle-down"></i></p>
+                  </div>
+                </div>
+                <ul class="profile-dropdown onhover-show-div">
+                  <li><a href="#"><i data-feather="user"></i><span>Account </span></a></li>
+                  <li><a href="#"><i data-feather="mail"></i><span>Inbox</span></a></li>
+                  <li><a href="#"><i data-feather="file-text"></i><span>Market</span></a></li>
+                  <li><a href="#"><i data-feather="settings"></i><span>Settings</span></a></li>
+                  <li><a href="#"><i data-feather="log-in"> </i><span>Log in</span></a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <script class="result-template" type="text/x-handlebars-template">
+            <div class="ProfileCard u-cf">                        
+            <div class="ProfileCard-avatar"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-airplay m-0"><path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><polygon points="12 15 17 21 7 21 12 15"></polygon></svg></div>
+            <div class="ProfileCard-details">
+            <div class="ProfileCard-realName">{{name}}</div>
+            </div>
+            </div>
+          </script>
+          <script class="empty-template" type="text/x-handlebars-template"><div class="EmptyMessage">Your search turned up 0 results. This most likely means the backend is down, yikes!</div></script>
+        </div>
+      </div>
+      <!-- Page Header Ends                              -->
+      <!-- Page Body Start-->
+      <div class="page-body-wrapper">
+        <!-- Page Sidebar Start-->
+        <div class="sidebar-wrapper"  >
+          <div>
+            <div class="logo-wrapper"><a href="index.html"><img class="img-fluid for-light" src="../assets/images/logo/logo.png" alt=""><img class="img-fluid for-dark" src="../assets/images/logo/logo_dark.png" alt=""></a>
+              <div class="back-btn"><i class="fa fa-angle-left"></i></div>
+              <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="grid"> </i></div>
+            </div>
+            <div class="logo-icon-wrapper"><a href="index.html"><img class="img-fluid" src="../assets/images/logo/logo-icon.png" alt=""></a></div>
+            <nav class="sidebar-main" >
+              <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
+              <div id="sidebar-menu" style="padding:10px;">
+                <ul class="sidebar-links" id="simple-bar">
+                  <li class="back-btn"><a href="index.html"><img class="img-fluid" src="../assets/images/logo/logo-icon.png" alt=""></a>
+                    <div class="mobile-back text-end"><span>Back</span><i class="fa fa-angle-right ps-2" aria-hidden="true"></i></div>
+                  </li>
+                  
+                  
+                  <li class="sidebar-main-title">
+                    <div>
+                      <h6>General</h6>
+                      <p>All neccesory pages added</p>
+                    </div>
+                  </li>
+                  <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="landing-page.html"><i data-feather="cast"> </i><span>Dashboard</span></a></li>
+                  <li class="mega-menu"><a class="sidebar-link sidebar-title" href="#"><i data-feather="layers"></i><span>Cryptocurrency Market</span></a>
+                    <div class="mega-menu-container menu-content">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col mega-box" >
+                            <div class="link-section"  style="margin-left:25px">
+                              <div class="submenu-title">
+                                <h5 style="color:#222;font-size:15px">Cryptocoin Market</h5>
+                              </div>
+                              <ul class="submenu-content opensubmegamenu" >
+                                <li><a href="" >Market Place</a></li>
+                                <li><a href="" >New Transaction</a></li>
+                                <li><a href="" >Transfer Crypto</a></li>
+                                <li><a href="" >Load Wllet</a></li>
+                                <li><a href="" >New Wallet</a></li>
+                                <li><a href="" >Buy/sell coins</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col mega-box">
+                            <div class="link-section"  style="margin-left:25px">
+                              <div class="submenu-title">
+                                <h5 style="color:#222;font-size:15px">Fiat/Forex Market Place</h5>
+                              </div>
+                              <ul class="submenu-content opensubmegamenu">
+                                <li><a href="" target="_blank" ></a>Trade Now</li>
+                                <li><a href="" target="_blank">Trade Insight</a></li>
+                                <li><a href="" target="_blank">Buy Stock/Assets                     </a></li>
+                                <li><a href="" target="_blank">Sell Stock/Asset</a></li>
+                                <li><a href="" target="_blank">Investment Plan</a></li>
+                                <li><a href="" target="_blank">Investment Return</a></li>
+                                <li><a href="" target="_blank">Money Doubler</a></li>
+                                <li><a href="" target="_blank">Forex Game</a></li>
+                                <li><a href="" target="_blank">Trade Casino</a></li>
+                                <li><a href="" target="_blank">Training/Demo</a></li>
+                                <li><a href="">Back Office</a></li>
+                                <li><a href="">Forex Wallet</a></li>
+                                <li><a href="">Card Prefrences</a></li>
+                                <li><a href="">Account Prefrences</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col mega-box">
+                            <div class="link-section"  style="margin-left:25px">
+                              <div class="submenu-title">
+                                <h5 style="color:#222;font-size:15px">Quick Money Trade</h5>
+                              </div>
+                              <ul class="submenu-content opensubmegamenu">
+                                <li><a href="" >Crypto Gaming</a></li>
+                                <li><a href="" >Virtual Trading</a></li>
+                                <li><a href="">Trading Bets</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col mega-box">
+                            <div class="link-section"  style="margin-left:25px">
+                              <div class="submenu-title">
+                                <h5 style="color:#222;font-size:15px">Billings</h5>
+                              </div>
+                              <ul class="submenu-content opensubmegamenu">
+                                <li><a href="">Documents</a></li>
+                                <li><a href="">Invoices</a></li>
+                                <li><a href="">Block Mining</a></li>
+                                <li><a href="">Reports</a></li>
+                                <li><a href="">Tutors</a></li>
+                                <li><a href="">Ace Maker</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="sample-page.html"><i data-feather="file-text"> </i><span>New Transaction</span></a></li>
+                  <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="internationalization.html"><i data-feather="globe"> </i><span>Wallet Topup</span></a></li>
+                  <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="../starter-kit/index.html" target="_blank"><i data-feather="anchor"></i><span>Digital Exchange</span></a></li>
+                  
+                  <li class="sidebar-main-title">
+                    <div>
+                      <h6>Transactions</h6>
+                      <p>Account/History</p>
+                    </div>
+                  </li>
+                  <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#"><i data-feather="image"></i><span>Forex History</span></a>
+                    <ul class="sidebar-submenu" style="margin-left:25px">
+                      <li><a href="">Manage Transaction Accounts</a></li>
+                      <li><a href="">Transaction History</a></li>
+                      <li><a href="">Trade Wins</a></li>
+                      <li><a href="">Investment Turn Overs</a></li>
+                      <li><a href="">AI Assist</a></li>
+                    </ul>
+                  </li>
+                  <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#"><i data-feather="film"></i><span>Crypto Coins</span></a>
+                    <ul class="sidebar-submenu" style="margin-left:25px">
+                      <li><a href="">Transaction History</a></li>
+                      <li><a href="">Wallet History</a></li>
+                      <li><a href="">Investment Turn Overs</a></li>
+                    </ul>
+                  </li>
+                  <li class="sidebar-main-title">
+                    <div>
+                      <h6>Information</h6>
+                      <p>Help/Knowledgebase</p>
+                    </div>
+                  </li>
+                  <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="faq.html"><i data-feather="help-circle"> </i><span>FAQ</span></a></li>
+                  <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#"><i data-feather="package"></i><span>News</span></a>
+                    <ul class="sidebar-submenu" style="margin-left:25px">
+                      <li><a href="">Crypto News</a></li>
+                      <li><a href="">Forex News</a></li>
+                      <li><a href="">Blogs</a></li>
+                      <li><a href="">Forums</a></li>
+                    </ul>
+                  </li>
+                  <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#"><i data-feather="radio"></i><span>Learning</span></a>
+                    <ul class="sidebar-submenu" style="margin-left:25px">
+                      <li><a href="">Learning Forex</a></li>
+                      <li><a href="">Learning Crypto Trade</a></li>
+                    </ul>
+                  </li>
+                  <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#"><i data-feather="map"></i><span>Account</span></a>
+                    <ul class="sidebar-submenu">
+                      <li><a href="">Profile</a></li>
+                      <li><a href="">Change Password</a></li>
+                    </ul>
+                  </li>
+                  <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#"><i data-feather="edit"></i><span>Editors</span></a>
+                    <ul class="sidebar-submenu" style="margin-left:25px">
+                      <li><a href="summernote.html">Notes</a></li>
+
+                    </ul>
+                  </li>
+                  <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="knowledgebase.html"><i data-feather="sunrise"> </i><span>Knowledgebase</span></a></li>
+                  <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="support-ticket.html"><i data-feather="users"> </i><span>Support Ticket</span></a></li>
+                </ul>
+              </div>
+              <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i>Logout</div>
+            </nav>
+          </div>
+        </div>
+        <!-- Page Sidebar Ends-->
+        <div class="page-body">
+          <div class="container-fluid">        
+            <div class="page-title">
+              <div class="row">
+                <div class="col-6">
+                  <h3>Default</h3>
+                </div>
+                <div class="col-6">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">                                       <i data-feather="home"></i></a></li>
+                    <li class="breadcrumb-item">Dashboard</li>
+                    <li class="breadcrumb-item active">Default      </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Container-fluid starts-->
+          <div class="container-fluid">
+            <div class="card">
+              <div class="card-header">
+                <h5>KYC Billing Details</h5>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-xl-6 col-sm-12">
+                    <form>
+                      <div class="row">
+                        <div class="mb-3 col-sm-6">
+                          <label for="inputEmail4">First Name</label>
+                          <input class="form-control" id="inputEmail4" type="email" data-bs-original-title="" title="">
+                        </div>
+                        <div class="mb-3 col-sm-6">
+                          <label for="inputPassword4">Last Name</label>
+                          <input class="form-control" id="inputPassword4" type="password" data-bs-original-title="" title="">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="mb-3 col-sm-6">
+                          <label for="inputEmail5">Phone</label>
+                          <input class="form-control" id="inputEmail5" type="email" data-bs-original-title="" title="">
+                        </div>
+                        <div class="mb-3 col-sm-6">
+                          <label for="inputPassword7">Email Address</label>
+                          <input class="form-control" id="inputPassword7" type="password" data-bs-original-title="" title="">
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="inputState">Country</label>
+                        <select class="form-control" id="inputState">
+                          <option selected="">Choose...</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                      <div class="mb-3">
+                        <label for="inputAddress5">Address</label>
+                        <input class="form-control" id="inputAddress5" type="text" data-bs-original-title="" title="">
+                      </div>
+                      <div class="mb-3">
+                        <label for="inputCity">Town/City</label>
+                        <input class="form-control" id="inputCity" type="text" data-bs-original-title="" title="">
+                      </div>
+                      <div class="mb-3">
+                        <label for="inputAddress2">State/Country</label>
+                        <input class="form-control" id="inputAddress2" type="text" data-bs-original-title="" title="">
+                      </div>
+                      <div class="mb-3">
+                        <label for="inputAddress6">Postal Code</label>
+                        <input class="form-control" id="inputAddress6" type="text" data-bs-original-title="" title="">
+                      </div>
+                      <div class="mb-3">
+                        <div class="form-check">
+                          <input class="form-check-input" id="gridCheck" type="checkbox" data-bs-original-title="" title="">
+                          <label class="form-check-label" for="gridCheck">Check me out</label>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="col-xl-6 col-sm-12">
+                    <div class="checkout-details">
+                      <div class="order-box">
+                        <div class="title-box">
+                          <div class="checkbox-title">
+                            <h4>Product </h4><span>Total</span>
+                          </div>
+                        </div>
+                        <ul class="qty">
+                          <li>Pink Slim Shirt × 1 <span>$25.10</span></li>
+                          <li>SLim Fit Jeans × 1 <span>$555.00</span></li>
+                        </ul>
+                        <ul class="sub-total">
+                          <li>Subtotal <span class="count">$380.10</span></li>
+                          <li class="shipping-class">Shipping
+                            <div class="shopping-checkout-option">
+                              <label class="d-block" for="chk-ani">
+                                <input class="checkbox_animated" id="chk-ani" type="checkbox" checked="" data-bs-original-title="" title="">Option 1
+                              </label>
+                              <label class="d-block" for="chk-ani1">
+                                <input class="checkbox_animated" id="chk-ani1" type="checkbox" data-bs-original-title="" title="">Option 2
+                              </label>
+                            </div>
+                          </li>
+                        </ul>
+                        <ul class="sub-total total">
+                          <li>Total <span class="count">$620.00</span></li>
+                        </ul>
+                        <div class="animate-chk">
+                          <div class="row">
+                            <div class="col">
+                              <label class="d-block" for="edo-ani">
+                                <input class="radio_animated" id="edo-ani" type="radio" name="rdo-ani" checked="" data-original-title="" title="" data-bs-original-title="">Check Payments
+                              </label>
+                              <label class="d-block" for="edo-ani1">
+                                <input class="radio_animated" id="edo-ani1" type="radio" name="rdo-ani" data-original-title="" title="" data-bs-original-title="">Cash On Delivery
+                              </label>
+                              <label class="d-block" for="edo-ani2">
+                                <input class="radio_animated" id="edo-ani2" type="radio" name="rdo-ani" checked="" data-original-title="" title="" data-bs-original-title="">PayPal<img class="img-paypal" src="../assets/images/checkout/paypal.png" alt="">
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="order-place"><a class="btn btn-primary" href="#" data-bs-original-title="" title="">Place Order  </a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Container-fluid Ends-->
+        </div>
+        <!-- footer start-->
+        <footer class="footer">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12 footer-copyright text-center">
+                <p class="mb-0">Copyright 2021 © ENTERPRISE COMPANY  </p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <!-- latest jquery-->
+    <script src="./js/vendor/jquery-3.5.1.min.js"></script>
+    <!-- Bootstrap js-->
+    <script src="./js/vendor/bootstrap.bundle.min.js"></script>
+    <!-- feather icon js-->
+    <script src="./js/vendor/feather.min.js"></script>
+    <script src="./js/vendor/feather-icon.js"></script>
+    <!-- scrollbar js-->
+    <script src="./js/vendor/simplebar.js"></script>
+  
+    
+    <!-- Plugins JS start-->
+
+    <script src="./js/vendor/bootstrap-notify.min.js"></script>
+   
+    <script src="./js/vendor/datepicker.js"></script>
+    <script src="./js/vendor/datepicker.en.js"></script>
+    <script src="./js/vendor/datepicker.custom.js"></script>
+    <script src="./js/vendor/handlebars.js"></script>
+    <script src="./js/vendor/typeahead.bundle.js"></script>
+    <script src="./js/vendor/typeahead.custom.js"></script>
+    <script src="./js/vendor/handlebars.js"></script>
+    <script src="./js/vendor/typeahead-custom.js"></script>
+    <!-- Plugins JS Ends-->
+    <script src="./js/vendor/customizer.js"></script> 
+
+    <!-- Sidebar jquery-->
+    <script src=".js/core/custom.js"></script>
+    <script src="./js/core/config.js"></script>
+    <script src="./js/core/sidebar-menu.js"></script>
+    <script src="./js/core/default.js"></script>
+    <script src="./js/core/index.js"></script>
+    <!-- Theme js-->
+    <script src="./js/core/script.js"></script>
+   
+
+    <script>
+        $(window).on('load', function(){
+            $(".loader-wrapper").fadeOut("slow")
+        })
+    </script>
+    
+  </body>
+</html>
