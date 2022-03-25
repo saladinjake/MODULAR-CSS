@@ -19,14 +19,10 @@
   <body onload="startTime()">
     <!-- loader starts-->
     <div class="loader-wrapper">
-      <div class="loader-index"><span></span></div>
-      <svg>
-        <defs></defs>
-        <filter id="goo">
-          <fegaussianblur in="SourceGraphic" stddeviation="11" result="blur"></fegaussianblur>
-          <fecolormatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo"> </fecolormatrix>
-        </filter>
-      </svg>
+      <!-- <div class="loader-index"><span></span></div> -->
+      <div class="loader-box">
+        <div class="loader-37"></div>
+      </div>
     </div>
     <!-- loader ends-->
     <!-- tap on top starts-->
@@ -41,7 +37,7 @@
             <div class="form-group w-100">
               <div class="Typeahead Typeahead--twitterUsers">
                 <div class="u-posRelative">
-                  <input class="demo-input Typeahead-input form-control-plaintext w-100" type="text" placeholder="Search Cuba .." name="q" title="" autofocus>
+                  <input class="demo-input Typeahead-input form-control-plaintext w-100" type="text" placeholder="Search  .." name="q" title="" autofocus>
                   <div class="spinner-border Typeahead-spinner" role="status"><span class="sr-only">Loading...</span></div><i class="close-search" data-feather="x"></i>
                 </div>
                 <div class="Typeahead-menu"></div>
